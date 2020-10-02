@@ -11,6 +11,7 @@ RSpec.describe "メッセージ投稿機能", type: :system do
       # サインインする
       sign_in(@room_user.user)
 
+      # 作成されたチャットルームへ遷移する
       click_on(@room_user.room.name)
 
       # DBに保存されていないことを確認する
